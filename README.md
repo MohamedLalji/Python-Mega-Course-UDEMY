@@ -1,5 +1,3 @@
-**Description:**
-
 Welcome to the "Python Mega Course (Udemy) Code" repository! Here, you will find a comprehensive collection of all the code and projects that I'll be learning and creating throughout my journey in the Python Mega Course on Udemy.
 
 **About the Course:**
