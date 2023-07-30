@@ -6,7 +6,7 @@ while True:
 
     match user_action:
         case 'add':
-            todo = input("Enter a todo: ")
+            todo = input("Enter a.txt todo: ")
             todos.append(todo)
         case 'show':
             for index, item in enumerate(todos):
@@ -16,7 +16,7 @@ while True:
         case 'edit':
             number = int(input("Number of the todo to edit: "))
             number = number - 1
-            new_todo = input("Enter a new todo: ")
+            new_todo = input("Enter a.txt new todo: ")
             todos[number] = new_todo
         case'complete':
             number = int(input("Number of the todo to complete: "))

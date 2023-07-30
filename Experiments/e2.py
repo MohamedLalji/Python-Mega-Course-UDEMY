@@ -1,4 +1,4 @@
-user_prompt = "Enter a todo: "
+user_prompt = "Enter a.txt todo: "
 
 todos = []
 

@@ -1,4 +1,4 @@
-new_member = input("Add a new member: ")
+new_member = input("Add a.txt new member: ")
 
 file = open('members.txt', 'r')
 members = file.readlines()

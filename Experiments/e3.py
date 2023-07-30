@@ -7,7 +7,7 @@ while True:
 
     match user_action:
         case 'add':
-            todo = input("Enter a todo: ")
+            todo = input("Enter a.txt todo: ")
             todos.append(todo)
         case 'show' | 'display':
             print("The items in your todo list so far are: ")
