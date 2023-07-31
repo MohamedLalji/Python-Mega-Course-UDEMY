@@ -5,11 +5,10 @@ while True:
 
     match user_action:
         case 'add':
-            todo = input("Enter a.txt todo: ") + "\n"
+            todo = input("Enter a todo: ") + "\n"
 
-            file = open('todos.txt', 'r')
-            todos = file.readlines()
-            file.close()
+            with open('todos.txt', 'r') as file:
+                todos = file.readlines()
 
             todos.append(todo)
 
@@ -30,7 +29,7 @@ while True:
         case 'edit':
             number = int(input("Number of the todo to edit: "))
             number = number - 1
-            new_todo = input("Enter a.txt new todo: ")
+            new_todo = input("Enter a new todo: ")
             todos[number] = new_todo
         case'complete':
             number = int(input("Number of the todo to complete: "))
