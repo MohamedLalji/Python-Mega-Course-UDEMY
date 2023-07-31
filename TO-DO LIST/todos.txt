@@ -1,6 +1,3 @@
-shower
 prepare
-play
+play football
 code
-fix
-write
