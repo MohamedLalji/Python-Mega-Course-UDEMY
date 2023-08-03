@@ -18,7 +18,7 @@ while True:
         with open('todos.txt', 'r') as file:
             todos = file.readlines()
 
-        # new_todos = [item.strip('\n') for item in todos]
+        # new_todos = [item.strip('\n') for item in todos]... This is an example of list comprehensions
 
         for index, item in enumerate(todos):
             item = item.strip('\n')
