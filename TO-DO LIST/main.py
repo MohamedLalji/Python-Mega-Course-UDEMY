@@ -42,19 +42,23 @@ while True:
             continue
 
     elif user_action.startswith("complete"):
-        number = int(user_action[9:])
+        try:
+            number = int(user_action[9:])
 
-        with open('todos.txt', 'r') as file:
-            todos = file.readlines()
+            with open('todos.txt', 'r') as file:
+                todos = file.readlines()
 
-        index = number - 1      # This is done to make it easier and not have to do the calc again and again
-        todo_to_remove = todos[index].strip('\n')
-        todos.pop(index)
+            index = number - 1      # This is done to make it easier and not have to do the calc again and again
+            todo_to_remove = todos[index].strip('\n')
+            todos.pop(index)
 
-        with open('todos.txt', 'w') as file:
-            file.writelines(todos)
+            with open('todos.txt', 'w') as file:
+                file.writelines(todos)
 
-        print(f"Todo {todo_to_remove} was removed from the list.")
+            print(f"Todo {todo_to_remove} was removed from the list.")
+        except IndexError:
+            print("There is no Item with that number.")
+            continue
 
     elif user_action.startswith("exit"):
         break

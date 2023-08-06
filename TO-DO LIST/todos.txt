@@ -4,5 +4,4 @@ Create content for youtube
 Fix the code
 clean the car
 fix the bug
-add a new member
- add a new number
+update the OS
