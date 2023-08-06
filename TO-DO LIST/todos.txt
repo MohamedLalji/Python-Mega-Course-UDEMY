@@ -2,4 +2,5 @@ Go to the gym
 code
 Create content for youtube
 Fix the code
-Buy a car
+clean the car
+fix the bug
