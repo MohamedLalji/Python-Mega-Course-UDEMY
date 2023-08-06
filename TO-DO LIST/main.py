@@ -25,17 +25,21 @@ while True:
             row = f"{index + 1}-{item}"
             print(row)
     elif user_action.startswith("edit"):
-        number = int(user_action[5:])
-        number = number - 1
+        try:
+            number = int(user_action[5:])
+            number = number - 1
 
-        with open('todos.txt', 'r') as file:
-            todos = file.readlines()
+            with open('todos.txt', 'r') as file:
+                todos = file.readlines()
 
-        new_todo = input("Enter a new todo: ")
-        todos[number] = new_todo + '\n'
+            new_todo = input("Enter a new todo: ")
+            todos[number] = new_todo + '\n'
 
-        with open('todos.txt', 'w') as file:
-            file.writelines(todos)
+            with open('todos.txt', 'w') as file:
+                file.writelines(todos)
+        except ValueError:
+            print("Your command is not valid.")
+            continue
 
     elif user_action.startswith("complete"):
         number = int(user_action[9:])
